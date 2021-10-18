@@ -1,0 +1,16 @@
+[
+{
+  "modid": "magichiganbana",
+  "name": "Magic Higanbana",
+  "description": "for magicHiganbana package",
+  "version": "${version}"
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Anidlebrain"],
+  "credits": "Forge",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
