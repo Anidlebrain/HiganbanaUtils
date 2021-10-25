@@ -39,7 +39,7 @@ public class INumber {
             return 0;
         }
         int res = 0;
-        for (int i = 0; i < binary.length(); ++i)
+        for (int i = binary.length(); i >=0 ; --i)
         {
             res = (res << 1) | (binary.indexOf(i) - '0');
         }

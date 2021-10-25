@@ -1,20 +1,20 @@
 package anidlebrain.magichiganbana.impl;
 
-import anidlebrain.magichiganbana.api.mods.woot.IWootRecipes;
+
+import anidlebrain.magichiganbana.api.mods.woot.IWootAnvilRecipe;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
-import net.minecraft.item.ItemStack;
+import ipsis.woot.crafting.AnvilManager;
+import ipsis.woot.crafting.IAnvilRecipe;
 import ipsis.Woot;
-import net.minecraft.item.crafting.Ingredient;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.lang.reflect.Field;
 import java.util.List;
 
-public class MCAnvilManager {
+public class MCAnvilManager implements IWootAnvilRecipe {
 
-    static void addRecipe(IItemStack output, IItemStack base, boolean preserveBase, IIngredient[] ingredients)
+    static void removeRecipe(IItemStack output)
     {
 
     }
