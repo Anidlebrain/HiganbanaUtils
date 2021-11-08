@@ -10,6 +10,9 @@ import stanhebben.zenscript.annotations.ZenMethod;
 import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
 import static ipsis.Woot.anvilManager;
 
+/**
+ * @author Andileabrain
+ */
 @ZenRegister
 @ZenClass("mods.magichiganbana.Woot.AnvilRecipe")
 @SuppressWarnings("unused")

@@ -14,8 +14,7 @@ import java.util.List;
 
 public class MCAnvilManager implements IWootAnvilRecipe {
 
-    static void removeRecipe(IItemStack output)
-    {
+    static void removeRecipe(IItemStack output) {
 
     }
 }

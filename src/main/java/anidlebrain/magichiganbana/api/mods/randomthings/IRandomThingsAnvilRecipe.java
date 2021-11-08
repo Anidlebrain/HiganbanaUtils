@@ -1,6 +1,5 @@
 package anidlebrain.magichiganbana.api.mods.randomthings;
 
-import crafttweaker.CraftTweakerAPI;
 import crafttweaker.IAction;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IItemStack;
@@ -11,13 +10,15 @@ import stanhebben.zenscript.annotations.ZenMethod;
 
 import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
 
+/**
+ * @author Andileabrain
+ */
 @ZenRegister
 @ZenClass("mods.magichiganbana.RandomThings.AnvilRecipe")
 @SuppressWarnings("unused")
 public interface IRandomThingsAnvilRecipe {
     @ZenMethod
-    static void addRecipe(IItemStack output, IItemStack ingredient1, IItemStack ingredient2, int cost)
-    {
+    static void addRecipe(IItemStack output, IItemStack ingredient1, IItemStack ingredient2, int cost) {
         queuePostInitAction(new IAction() {
             @Override
             public void apply() {
@@ -36,8 +37,7 @@ public interface IRandomThingsAnvilRecipe {
     }
 
     @ZenMethod
-    static void removeRecipe(IItemStack output)
-    {
+    static void removeRecipe(IItemStack output) {
         queuePostInitAction(new IAction() {
             @Override
             public void apply() {

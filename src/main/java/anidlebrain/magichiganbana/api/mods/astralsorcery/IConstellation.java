@@ -5,6 +5,9 @@ import crafttweaker.annotations.ZenRegister;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
+/**
+ * @author Andileabrain
+ */
 @ZenRegister
 @ZenClass("mods.magichiganbana.AstralSorcery.constellation")
 @SuppressWarnings("unused")

@@ -7,13 +7,15 @@ import hellfirepvp.astralsorcery.common.constellation.star.StarLocation;
 
 import java.awt.Color;
 
+/**
+ * @author Andileabrain
+ */
 public class MCIConstellation implements IConstellation {
     private final ConstellationBase m_starbase;
     private final StarLocation[] m_starList = new StarLocation[10];
     private int m_starNum = 0;
 
-    public MCIConstellation(String name, int level, int color)
-    {
+    public MCIConstellation(String name, int level, int color) {
         if (level == 1) {
             m_starbase = new ConstellationBase.Major(name, new Color(color));
         }
