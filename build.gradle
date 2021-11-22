@@ -12,7 +12,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.2'
+version = '1.0.5'
 group = 'anidlebrain.magichiganbana'
 archivesBaseName = 'magichiganbanautils'
 
@@ -40,7 +40,8 @@ dependencies {
 	deobfCompile "curse.maven:woot-244049:2712670"
 	deobfCompile "curse.maven:RandomThings-59816:2905241"
 	deobfCompile "curse.maven:ActuallyAdditions-228404:3117927"
-	
+	deobfCompile "curse.maven:JustEnoughResources-240630:2728585"
+	deobfCompile "curse.maven:ModularMachinery-270790:2761302"
 }
 
 repositories {
@@ -61,7 +62,7 @@ repositories {
         name = 'jei'
         url = 'http://dvs1.progwml6.com/files/maven'
     }
-	maven {
+    maven {
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }

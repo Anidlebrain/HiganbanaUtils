@@ -3,7 +3,7 @@
   "modid": "magichiganbanautils",
   "name": "Magic Higanbana Utils",
   "description": "for magicHiganbana package",
-  "version": "${version}"
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

@@ -8,7 +8,7 @@ import lumien.randomthings.recipes.imbuing.ImbuingRecipeHandler;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
-import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
+import anidlebrain.magichiganbana.MagicHiganbana;
 
 /**
  * @author Andileabrain
@@ -20,7 +20,7 @@ public interface IRandomThingsImbuingRecipe {
 
     @ZenMethod
     static void addRecipe(IItemStack output, IItemStack ingredient1, IItemStack ingredient2, IItemStack ingredient3, IItemStack toImbue) {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 ImbuingRecipeHandler.addRecipe(CraftTweakerMC.getItemStack(ingredient1),
@@ -40,7 +40,7 @@ public interface IRandomThingsImbuingRecipe {
 
     @ZenMethod
     static void removeRecipe(IItemStack output) {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 ImbuingRecipeHandler.imbuingRecipes.removeIf(ir -> ir.getResult().isItemEqual(CraftTweakerMC.getItemStack(output)));
@@ -55,7 +55,7 @@ public interface IRandomThingsImbuingRecipe {
 
     @ZenMethod
     static void removeAll() {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 ImbuingRecipeHandler.imbuingRecipes.clear();

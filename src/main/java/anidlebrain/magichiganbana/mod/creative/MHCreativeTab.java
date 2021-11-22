@@ -1,6 +1,7 @@
 package anidlebrain.magichiganbana.mod.creative;
 
 import anidlebrain.magichiganbana.MagicHiganbana;
+import anidlebrain.magichiganbana.mod.block.MHInitBlock;
 import anidlebrain.magichiganbana.mod.items.MHInitItems;
 import de.ellpeck.actuallyadditions.api.misc.IDisableableItem;
 import net.minecraft.block.Block;
@@ -11,6 +12,9 @@ import net.minecraft.util.NonNullList;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * @author Andileabrain
+ */
 public class MHCreativeTab extends CreativeTabs {
     public static final MHCreativeTab INSTANCE = new MHCreativeTab();
     private NonNullList<ItemStack> list;
@@ -29,7 +33,18 @@ public class MHCreativeTab extends CreativeTabs {
     public void displayAllRelevantItems(NonNullList<ItemStack> list) {
         this.list = list;
 
+        //items
         this.add(MHInitItems.itemMysticalLens);
+
+        //blocks
+        this.add(MHInitBlock.blockDisplayQian);
+        this.add(MHInitBlock.blockDisplayDui);
+        this.add(MHInitBlock.blockDisplayGen);
+        this.add(MHInitBlock.blockDisplayKan);
+        this.add(MHInitBlock.blockDisplayLi);
+        this.add(MHInitBlock.blockDisplayXun);
+        this.add(MHInitBlock.blockDisplayZhen);
+        this.add(MHInitBlock.blockDisplayKun);
     }
 
     public void add(Item item) {
@@ -46,7 +61,7 @@ public class MHCreativeTab extends CreativeTabs {
 
     @Override
     public boolean hasSearchBar() {
-        return true;
+        return false;
     }
 
     @Override

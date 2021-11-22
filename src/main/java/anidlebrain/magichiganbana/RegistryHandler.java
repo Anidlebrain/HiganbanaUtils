@@ -1,6 +1,8 @@
-package anidlebrain.magichiganbana.mod;
+package anidlebrain.magichiganbana;
 
 import anidlebrain.magichiganbana.MagicHiganbana;
+import anidlebrain.magichiganbana.mod.block.MHInitBlock;
+import anidlebrain.magichiganbana.mod.block.base.MHBlockBase;
 import anidlebrain.magichiganbana.mod.items.MHInitItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -25,11 +27,13 @@ public class RegistryHandler {
 
     @SubscribeEvent
     public void onBlockRegistry(Register<Block> event) {
-        //InitBlocks.init();
+        MagicHiganbana.LOGGER.info("onBlockRegistry");
+        MHInitBlock.init();
 
         for (Block block : BLOCKS_TO_REGISTER) {
             event.getRegistry().register(block);
         }
+        BLOCKS_TO_REGISTER.clear();
     }
 
     @SubscribeEvent

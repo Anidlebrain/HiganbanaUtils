@@ -7,8 +7,8 @@ import crafttweaker.api.minecraft.CraftTweakerMC;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
-import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
-import static ipsis.Woot.anvilManager;
+import anidlebrain.magichiganbana.MagicHiganbana;
+import ipsis.Woot;
 
 /**
  * @author Andileabrain
@@ -21,10 +21,10 @@ public interface IWootAnvilRecipe {
     @ZenMethod
     static void addRecipe(IItemStack output, IItemStack base, boolean preserveBase, IItemStack[] inputs)
     {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
               @Override
               public void apply() {
-                  anvilManager.addRecipe(CraftTweakerMC.getItemStack(output),
+                  Woot.anvilManager.addRecipe(CraftTweakerMC.getItemStack(output),
                           CraftTweakerMC.getItemStack(base),
                           preserveBase,
                           (Object[])CraftTweakerMC.getItemStacks(inputs));
@@ -40,11 +40,11 @@ public interface IWootAnvilRecipe {
     @ZenMethod
     static void removeRecipe(IItemStack output)
     {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 //CraftTweakerAPI.logInfo("Cleaning up recipes");
-                anvilManager.getRecipes().removeIf(recipe -> recipe.isOutput(CraftTweakerMC.getItemStack(output)));
+                Woot.anvilManager.getRecipes().removeIf(recipe -> recipe.isOutput(CraftTweakerMC.getItemStack(output)));
             }
 
             @Override
@@ -56,10 +56,10 @@ public interface IWootAnvilRecipe {
 
     @ZenMethod
     static void removeAll() {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
-                anvilManager.getRecipes().clear();
+                Woot.anvilManager.getRecipes().clear();
             }
 
             @Override

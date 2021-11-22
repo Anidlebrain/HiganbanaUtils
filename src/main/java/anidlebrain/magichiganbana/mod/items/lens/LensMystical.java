@@ -1,5 +1,6 @@
 package anidlebrain.magichiganbana.mod.items.lens;
 
+import anidlebrain.magichiganbana.MagicHiganbana;
 import anidlebrain.magichiganbana.impl.WeightedOre;
 import de.ellpeck.actuallyadditions.api.internal.IAtomicReconstructor;
 import de.ellpeck.actuallyadditions.api.lens.Lens;
@@ -94,4 +95,5 @@ public class LensMystical extends Lens {
         map.get(state).forEach((k, v) -> values.add(new WeightedOre(k, map.get(state).get(k))));
         return values;
     }
+
 }

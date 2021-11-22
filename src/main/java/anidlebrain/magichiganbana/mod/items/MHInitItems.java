@@ -14,6 +14,8 @@ public class MHInitItems {
 
     public static void init() {
         MagicHiganbana.LOGGER.info("MHInitItems");
+        MHLen.init();
+
         itemMysticalLens = new MHItemLens("item_mystical_lens", MHLen.lensMystical);
     }
 }

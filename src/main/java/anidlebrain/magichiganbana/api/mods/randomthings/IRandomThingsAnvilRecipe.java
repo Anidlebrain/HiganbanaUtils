@@ -8,7 +8,7 @@ import lumien.randomthings.recipes.anvil.AnvilRecipeHandler;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
-import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
+import anidlebrain.magichiganbana.MagicHiganbana;
 
 /**
  * @author Andileabrain
@@ -19,7 +19,7 @@ import static anidlebrain.magichiganbana.MagicHiganbana.queuePostInitAction;
 public interface IRandomThingsAnvilRecipe {
     @ZenMethod
     static void addRecipe(IItemStack output, IItemStack ingredient1, IItemStack ingredient2, int cost) {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 AnvilRecipeHandler.addAnvilRecipe(CraftTweakerMC.getItemStack(ingredient1),
@@ -38,7 +38,7 @@ public interface IRandomThingsAnvilRecipe {
 
     @ZenMethod
     static void removeRecipe(IItemStack output) {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 AnvilRecipeHandler.getAllRecipes().removeIf(ir -> ir.getOutput().isItemEqual(CraftTweakerMC.getItemStack(output)));
@@ -53,7 +53,7 @@ public interface IRandomThingsAnvilRecipe {
 
     @ZenMethod
     static void removeAll() {
-        queuePostInitAction(new IAction() {
+        MagicHiganbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
                 AnvilRecipeHandler.getAllRecipes().clear();
