@@ -19,7 +19,6 @@ import java.util.List;
  * @author Andileabrain
  */
 
-
 @ZenRegister
 @ZenClass("mods.magichiganbana.AstralSorcery.Constellation")
 @SuppressWarnings("unused")
@@ -70,17 +69,7 @@ public class Constellation {
     @ZenMethod
     public void register() {
         if (starBase != null) {
-            MagicHiganbana.queuePostInitAction(new IAction() {
-                @Override
-                public void apply() {
-                    ConstellationRegistry.registerConstellation(starBase);
-                }
-
-                @Override
-                public String describe() {
-                    return "Adds " + name + " star";
-                }
-            });
+            ConstellationRegistry.registerConstellation(starBase);
         }
     }
 

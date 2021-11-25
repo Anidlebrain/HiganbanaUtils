@@ -1,8 +1,8 @@
 buildscript {
     repositories {
-		mavenCentral()
-		maven { url = "https://maven.aliyun.com/repository/public" }
-		maven { url = "https://maven.minecraftforge.net" }
+        mavenCentral()
+        maven { url = "https://maven.aliyun.com/repository/public" }
+        maven { url = "https://maven.minecraftforge.net" }
         jcenter()
         
     }
@@ -12,7 +12,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.5'
+version = '1.0.6'
 group = 'anidlebrain.magichiganbana'
 archivesBaseName = 'magichiganbanautils'
 
@@ -35,13 +35,19 @@ minecraft {
 }
 
 dependencies {
-	deobfCompile "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.652"
-	deobfCompile "curse.maven:astralsorcery-241721:3044416"
-	deobfCompile "curse.maven:woot-244049:2712670"
-	deobfCompile "curse.maven:RandomThings-59816:2905241"
-	deobfCompile "curse.maven:ActuallyAdditions-228404:3117927"
-	deobfCompile "curse.maven:JustEnoughResources-240630:2728585"
-	deobfCompile "curse.maven:ModularMachinery-270790:2761302"
+    deobfCompile "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.652"
+    deobfCompile "curse.maven:astralsorcery-241721:3044416"
+    deobfCompile "curse.maven:woot-244049:2712670"
+    deobfCompile "curse.maven:RandomThings-59816:2905241"
+    deobfCompile "curse.maven:ActuallyAdditions-228404:3117927"
+    deobfCompile "curse.maven:JustEnoughResources-240630:2728585"
+    deobfCompile "curse.maven:ModularMachinery-270790:2761302"
+    deobfCompile "curse.maven:Roots-246183:3484394"
+    deobfCompile "curse.maven:mysticallib-277064:3483816"
+    deobfCompile "curse.maven:mysticalworld-282940:3460961"
+    deobfCompile "curse.maven:Baubles-227083:2518667"
+	deobfCompile "curse.maven:CodeChickenLib-242818:2779848"
+	deobfCompile "curse.maven:Patchouli-306770:3162874"
 }
 
 repositories {
