@@ -34,13 +34,13 @@ import java.util.Queue;
 public class MagicHiganbana {
     public static final String MODID = "magichiganbana";
     public static final String NAME = "Magic Higanbana";
-    public static final String VERSION = "1.0.6";
+    public static final String VERSION = "1.0.7";
     public static final String DESPENDENCIES = "required-after:crafttweaker;" +
             "required-after:astralsorcery;" +
             "required-after:woot;" +
             "required-after:jeresources;" +
             "required-after:randomthings;" +
-            "required-after:actuallyadditions" +
+            "required-after:actuallyadditions;" +
             "required-after:roots";
 
     @Mod.Instance(MagicHiganbana.MODID)
