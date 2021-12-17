@@ -12,9 +12,9 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.7'
-group = 'anidlebrain.magichiganbana'
-archivesBaseName = 'magichiganbanautils'
+version = '1.0.9'
+group = 'anidlebrain.higanbana'
+archivesBaseName = 'higanbanautils'
 
 sourceCompatibility = targetCompatibility = '1.8' 
 compileJava {
@@ -48,6 +48,7 @@ dependencies {
     deobfCompile "curse.maven:Baubles-227083:2518667"
     deobfCompile "curse.maven:CodeChickenLib-242818:2779848"
     deobfCompile "curse.maven:Patchouli-306770:3162874"
+    deobfCompile "curse.maven:BloodMagic-224791:2822288"
 }
 
 repositories {
