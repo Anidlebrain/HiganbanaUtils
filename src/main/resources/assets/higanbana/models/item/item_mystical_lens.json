@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "higanbana:items/item_mystical_lens"
+  }
+}

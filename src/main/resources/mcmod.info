@@ -1,8 +1,8 @@
 [
 {
-  "modid": "magichiganbanautils",
-  "name": "Magic Higanbana Utils",
-  "description": "for magicHiganbana package",
+  "modid": "higanbanautils",
+  "name": "Higanbana Utils",
+  "description": "for Higanbana package",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

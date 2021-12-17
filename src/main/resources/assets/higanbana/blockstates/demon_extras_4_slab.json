@@ -1,0 +1,25 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "top": "bloodmagic:blocks/dungeon/dungeon_stone_v",
+            "bottom": "bloodmagic:blocks/dungeon/dungeon_stone_v",
+            "side": "bloodmagic:blocks/dungeon/dungeon_stone_v",
+            "all": "bloodmagic:blocks/dungeon/dungeon_stone_v"
+        }
+    },
+    "variants": {
+        "inventory": {
+            "model": "half_slab"
+        },
+        "half=bottom": {
+            "model": "half_slab"
+        },
+        "half=top": {
+            "model": "upper_slab"
+        },
+        "half=full": {
+            "model": "cube_all"
+        }
+    }
+}
