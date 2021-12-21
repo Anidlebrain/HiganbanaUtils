@@ -43,7 +43,7 @@ public interface IRandomThingsImbuingRecipe {
         Higanbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
-                ImbuingRecipeHandler.imbuingRecipes.removeIf(ir -> ir.getResult().isItemEqual(CraftTweakerMC.getItemStack(output)));
+                ImbuingRecipeHandler.imbuingRecipes.removeIf(recipe -> recipe.getResult().isItemEqual(CraftTweakerMC.getItemStack(output)));
             }
 
             @Override

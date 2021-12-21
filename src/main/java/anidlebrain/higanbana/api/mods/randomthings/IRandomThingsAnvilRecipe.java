@@ -41,7 +41,7 @@ public interface IRandomThingsAnvilRecipe {
         Higanbana.queuePostInitAction(new IAction() {
             @Override
             public void apply() {
-                AnvilRecipeHandler.getAllRecipes().removeIf(ir -> ir.getOutput().isItemEqual(CraftTweakerMC.getItemStack(output)));
+                AnvilRecipeHandler.getAllRecipes().removeIf(recipe -> recipe.getOutput().isItemEqual(CraftTweakerMC.getItemStack(output)));
             }
 
             @Override

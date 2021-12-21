@@ -12,7 +12,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.9'
+version = '1.0.10'
 group = 'anidlebrain.higanbana'
 archivesBaseName = 'higanbanautils'
 
@@ -49,6 +49,7 @@ dependencies {
     deobfCompile "curse.maven:CodeChickenLib-242818:2779848"
     deobfCompile "curse.maven:Patchouli-306770:3162874"
     deobfCompile "curse.maven:BloodMagic-224791:2822288"
+    deobfCompile "curse.maven:EmbersConstruct-359414:3202426"
 }
 
 repositories {
