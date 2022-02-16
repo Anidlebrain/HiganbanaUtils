@@ -2,6 +2,7 @@ package anidlebrain.higanbanautils.api.mods.roots;
 
 import anidlebrain.higanbanautils.Higanbana;
 import crafttweaker.IAction;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
@@ -16,6 +17,7 @@ import stanhebben.zenscript.annotations.ZenMethod;
  * @author Andileabrain
  */
 
+@ModOnly("roots")
 @ZenRegister
 @ZenClass("mods.Higanbana.Roots.SpiritDrops")
 @SuppressWarnings("unused")

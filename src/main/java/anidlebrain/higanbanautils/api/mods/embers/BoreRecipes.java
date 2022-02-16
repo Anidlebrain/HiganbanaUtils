@@ -1,6 +1,7 @@
 package anidlebrain.higanbanautils.api.mods.embers;
 
 import com.google.common.collect.Sets;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
@@ -20,6 +21,8 @@ import java.util.stream.Collectors;
  * @author Andileabrain
  * modify by https://github.com/DaedalusGame/EmbersRekindled/blob/rekindled/src/main/java/teamroots/embers/compat/crafttweaker/EmberBore.java
  */
+
+@ModOnly("embers")
 @ZenRegister
 @ZenClass("mods.Higanbana.ember.BoreOutput")
 @SuppressWarnings("unused")

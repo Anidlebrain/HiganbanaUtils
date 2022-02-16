@@ -2,6 +2,7 @@ package anidlebrain.higanbanautils.api.mods.roots;
 
 import anidlebrain.higanbanautils.Higanbana;
 import crafttweaker.IAction;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.oredict.IOreDictEntry;
 import epicsquid.roots.properties.Property;
@@ -14,6 +15,7 @@ import stanhebben.zenscript.annotations.ZenMethod;
  * @author Andileabrain
  */
 
+@ModOnly("roots")
 @ZenRegister
 @ZenClass("mods.Higanbana.Roots.OreInfusion")
 @SuppressWarnings("unused")

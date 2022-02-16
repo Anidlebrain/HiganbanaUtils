@@ -15,6 +15,7 @@ import stanhebben.zenscript.annotations.ZenMethod;
 /**
  * @author Andileabrain
  */
+
 @ModOnly("embersconstruct")
 @ZenRegister
 @ZenClass("mods.Higanbana.EmbersConstruct.StampTableRecipe")

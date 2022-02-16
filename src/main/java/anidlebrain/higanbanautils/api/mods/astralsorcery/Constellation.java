@@ -1,6 +1,7 @@
 package anidlebrain.higanbanautils.api.mods.astralsorcery;
 
 import crafttweaker.CraftTweakerAPI;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import hellfirepvp.astralsorcery.common.constellation.ConstellationBase;
 import hellfirepvp.astralsorcery.common.constellation.ConstellationRegistry;
@@ -17,6 +18,7 @@ import java.util.List;
  * @author Andileabrain
  */
 
+@ModOnly("astralsorcery")
 @ZenRegister
 @ZenClass("mods.Higanbana.AstralSorcery.Constellation")
 @SuppressWarnings("unused")

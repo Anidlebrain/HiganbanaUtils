@@ -1,6 +1,7 @@
 package anidlebrain.higanbanautils.api.mods.randomthings;
 
 import crafttweaker.IAction;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
@@ -13,6 +14,8 @@ import anidlebrain.higanbanautils.Higanbana;
 /**
  * @author Andileabrain
  */
+
+@ModOnly("randomthings")
 @ZenRegister
 @ZenClass("mods.Higanbana.RandomThings.AnvilRecipe")
 @SuppressWarnings("unused")

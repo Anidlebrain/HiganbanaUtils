@@ -2,6 +2,7 @@ package anidlebrain.higanbanautils.api.mods.jeresources;
 
 import anidlebrain.higanbanautils.Higanbana;
 import crafttweaker.IAction;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
@@ -19,6 +20,7 @@ import java.util.List;
  * @author Andileabrain
  */
 
+@ModOnly("jeresources")
 @ZenRegister
 @ZenClass("mods.Higanbana.jeresources.JEIPlantEntry")
 @SuppressWarnings("unused")

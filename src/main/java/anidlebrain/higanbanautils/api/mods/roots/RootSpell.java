@@ -1,6 +1,7 @@
 package anidlebrain.higanbanautils.api.mods.roots;
 
 import crafttweaker.CraftTweakerAPI;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import epicsquid.roots.integration.crafttweaker.Herbs;
 import epicsquid.roots.properties.Property;
@@ -14,6 +15,7 @@ import stanhebben.zenscript.annotations.ZenMethod;
  * @author Andileabrain
  */
 
+@ModOnly("roots")
 @ZenRegister
 @ZenClass("mods.Higanbana.Roots.RootSpell")
 @SuppressWarnings("unused")

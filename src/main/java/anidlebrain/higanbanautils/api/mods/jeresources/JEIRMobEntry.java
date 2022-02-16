@@ -3,6 +3,7 @@ package anidlebrain.higanbanautils.api.mods.jeresources;
 import anidlebrain.higanbanautils.Higanbana;
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.IAction;
+import crafttweaker.annotations.ModOnly;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.entity.IEntityLivingBase;
 import crafttweaker.api.item.IItemStack;
@@ -23,6 +24,7 @@ import java.util.*;
  * @author Andileabrain
  */
 
+@ModOnly("jeresources")
 @ZenRegister
 @ZenClass("mods.Higanbana.jeresources.JEIRMobEntry")
 @SuppressWarnings("unused")
