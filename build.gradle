@@ -12,8 +12,8 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = '1.0.13'
-group = 'anidlebrain.higanbana'
+version = '1.0.14'
+group = 'anidlebrain.higanbanautils'
 archivesBaseName = 'higanbanautils'
 
 sourceCompatibility = targetCompatibility = '1.8' 
