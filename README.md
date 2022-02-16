@@ -1,5 +1,15 @@
-## 此mod为彼岸之法整合包定制mod，提供了一些crt的接口给[彼岸之法整合包](https://github.com/Anidlebrain/magic_higanbana)
-1. 添加[星辉魔法](https://github.com/HellFirePvP/AstralSorcery/tree/1.12.2)以crt的方式创建星座
-2. 添加[生物工厂](https://github.com/Ipsis/Woot/tree/1_12)crt支持
-3. 添加[随意作品](https://github.com/lumien231/Random-Things/tree/1.12.2)crt支持
-4. 添加[根源魔法](https://github.com/MysticMods/Roots/tree/release/3.1.4)的crt接口
+## 彼岸工具(HiganbanaUtils)mod提供了一些crt的接口给[彼岸之法整合包](https://github.com/Anidlebrain/magic_higanbana)
+1.  [星辉魔法](https://github.com/HellFirePvP/AstralSorcery/tree/1.12.2)
+    - 创建星座
+2.  [生物工厂](https://github.com/Ipsis/Woot/tree/1_12)
+    - 地狱铁砧的配方
+3.  [随意作品](https://github.com/lumien231/Random-Things/tree/1.12.2)
+    - 灌注台的配方
+    - 铁砧的配方
+5.  [根源魔法](https://github.com/MysticMods/Roots/tree/release/3.1.4)
+    - 守门者之杖释放法术消耗的材料
+7.  [余烬](https://github.com/DaedalusGame/EmbersRekindled)
+    - 灰烬开采机
+9.  [JER](https://github.com/way2muchnoise/JustEnoughResources)
+    - 自定义生物掉落物
+    - 自定义植物掉落物
